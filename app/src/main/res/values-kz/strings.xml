@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">surdoserver</string>
+
+    <string name="player_error">Ошибка инициализации проигрывателя YouTube: %s</string>
+
+    <string name="lang_kz">Қазақша</string>
+    <string name="lang_ru">Орысша</string>
+
+    <string name="cat0">Уақыт</string>
+    <string name="cat1">Алфавит</string>
+    <string name="cat2">Танысу</string>
+    <string name="cat3">Адам</string>
+    <string name="cat4">Отбасы</string>
+    <string name="cat5">Айлар атауы</string>
+    <string name="cat6">Апта күндері</string>
+    <string name="cat7">Табиғат</string>
+    <string name="cat8">Жыл мезгілдері</string>
+
+</resources>

@@ -1,0 +1,275 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="20dp"
+        android:background="#fff"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:background="@drawable/menu_border"
+                android:layout_weight="1"
+                android:padding="3dp"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content">
+
+                <Button
+                    android:id="@+id/cat0"
+                    android:text="@string/cat0"
+                    android:textSize="12sp"
+                    android:layout_width="match_parent"
+                    android:layout_height="140dp"
+                    android:background="?attr/selectableItemBackground"
+                    android:paddingTop="50dp"
+                    android:textColor="#7E8786"
+                    android:onClick="onClick"
+                    android:drawableTop="@mipmap/icons8_timer_40"/>
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="5dp"
+                android:layout_height="0dp">
+            </View>
+
+            <LinearLayout
+                android:background="@drawable/menu_border"
+                android:layout_weight="1"
+                android:padding="3dp"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content">
+
+                <Button
+                    android:id="@+id/cat1"
+                    android:text="@string/cat1"
+                    android:textSize="12sp"
+                    android:layout_width="match_parent"
+                    android:layout_height="140dp"
+                    android:background="?attr/selectableItemBackground"
+                    android:paddingTop="50dp"
+                    android:textColor="#7E8786"
+                    android:onClick="onClick"
+                    android:drawableTop="@mipmap/icons8_abc_40"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:paddingTop="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:background="@drawable/menu_border"
+                android:layout_weight="1"
+                android:padding="3dp"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content">
+
+                <Button
+                    android:id="@+id/cat2"
+                    android:text="@string/cat2"
+                    android:textSize="12sp"
+                    android:layout_width="match_parent"
+                    android:layout_height="140dp"
+                    android:background="?attr/selectableItemBackground"
+                    android:paddingTop="50dp"
+                    android:textColor="#7E8786"
+                    android:onClick="onClick"
+                    android:drawableTop="@mipmap/icons8_meeting_40"/>
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="5dp"
+                android:layout_height="0dp">
+            </View>
+
+            <LinearLayout
+                android:background="@drawable/menu_border"
+                android:layout_weight="1"
+                android:padding="3dp"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content">
+
+                <Button
+                    android:id="@+id/cat3"
+                    android:text="@string/cat3"
+                    android:textSize="12sp"
+                    android:layout_width="match_parent"
+                    android:layout_height="140dp"
+                    android:background="?attr/selectableItemBackground"
+                    android:paddingTop="50dp"
+                    android:textColor="#7E8786"
+                    android:onClick="onClick"
+                    android:drawableTop="@mipmap/icons8_account_40"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:paddingTop="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:background="@drawable/menu_border"
+                android:layout_weight="1"
+                android:padding="3dp"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content">
+
+                <Button
+                    android:id="@+id/cat4"
+                    android:text="@string/cat4"
+                    android:textSize="12sp"
+                    android:layout_width="match_parent"
+                    android:layout_height="140dp"
+                    android:background="?attr/selectableItemBackground"
+                    android:paddingTop="50dp"
+                    android:textColor="#7E8786"
+                    android:onClick="onClick"
+                    android:drawableTop="@mipmap/icons8_family_40"/>
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="5dp"
+                android:layout_height="0dp">
+            </View>
+
+            <LinearLayout
+                android:background="@drawable/menu_border"
+                android:layout_weight="1"
+                android:padding="3dp"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content">
+
+                <Button
+                    android:id="@+id/cat5"
+                    android:text="@string/cat5"
+                    android:textSize="12sp"
+                    android:layout_width="match_parent"
+                    android:layout_height="140dp"
+                    android:background="?attr/selectableItemBackground"
+                    android:paddingTop="50dp"
+                    android:textColor="#7E8786"
+                    android:onClick="onClick"
+                    android:drawableTop="@mipmap/icons8_calendar_40"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:paddingTop="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:background="@drawable/menu_border"
+                android:layout_weight="1"
+                android:padding="3dp"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content">
+
+                <Button
+                    android:id="@+id/cat6"
+                    android:text="@string/cat6"
+                    android:textSize="12sp"
+                    android:layout_width="match_parent"
+                    android:layout_height="140dp"
+                    android:background="?attr/selectableItemBackground"
+                    android:paddingTop="50dp"
+                    android:textColor="#7E8786"
+                    android:onClick="onClick"
+                    android:drawableTop="@mipmap/icons8_week_view_40"/>
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="5dp"
+                android:layout_height="0dp">
+            </View>
+
+            <LinearLayout
+                android:background="@drawable/menu_border"
+                android:layout_weight="1"
+                android:padding="3dp"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content">
+
+                <Button
+                    android:id="@+id/cat7"
+                    android:text="@string/cat7"
+                    android:textSize="12sp"
+                    android:layout_width="match_parent"
+                    android:layout_height="140dp"
+                    android:background="?attr/selectableItemBackground"
+                    android:paddingTop="50dp"
+                    android:textColor="#7E8786"
+                    android:onClick="onClick"
+                    android:drawableTop="@mipmap/icons8_barometer_40"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:paddingTop="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:background="@drawable/menu_border"
+                android:layout_weight="1"
+                android:padding="3dp"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content">
+
+                <Button
+                    android:id="@+id/cat8"
+                    android:text="@string/cat8"
+                    android:textSize="12sp"
+                    android:layout_width="match_parent"
+                    android:layout_height="140dp"
+                    android:background="?attr/selectableItemBackground"
+                    android:paddingTop="50dp"
+                    android:textColor="#7E8786"
+                    android:onClick="onClick"
+                    android:drawableTop="@mipmap/icons8_field_40"/>
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="5dp"
+                android:layout_height="0dp">
+            </View>
+
+            <View
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="0dp">
+            </View>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>

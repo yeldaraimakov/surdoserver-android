@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">surdoserver</string>
+
+    <string name="player_error">Ошибка инициализации проигрывателя YouTube: %s</string>
+
+    <string name="lang_kz">На казахском</string>
+    <string name="lang_ru">На русском</string>
+
+    <string name="cat0">Время</string>
+    <string name="cat1">Алфавит</string>
+    <string name="cat2">Знакомство </string>
+    <string name="cat3">Человек</string>
+    <string name="cat4">Семья</string>
+    <string name="cat5">Месяцы</string>
+    <string name="cat6">Дни недели</string>
+    <string name="cat7">Природа</string>
+    <string name="cat8">Времена года</string>
+</resources>
