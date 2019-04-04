@@ -1,6 +1,8 @@
 package kz.surdoserver;
 
 import android.content.Intent;
+import android.content.res.Configuration;
+import android.content.res.Resources;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.AdapterView;
@@ -74,9 +76,35 @@ public class WordsListActivity extends YouTubeBaseActivity {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
                 if (youTubePlayer != null) {
-                    youTubePlayer.loadVideo(wordList.get(position).getVideoLink());
+
+                    String lang = getLang();
+
+                    SurdoWord word = wordList.get(position);
+
+                    String link = (word.getVideoLinkRU() != null && !word.getVideoLinkRU().isEmpty())
+                            ? word.getVideoLinkRU() : word.getVideoLinkKZ();
+
+                    if ("kz".equals(lang) && word.getVideoLinkKZ() != null && !word.getVideoLinkKZ().isEmpty()) {
+                        link = word.getVideoLinkKZ();
+                    }
+
+                    if (link == null || link.isEmpty()) {
+                        Toast.makeText(getBaseContext(), haveNotVideoLink(lang), Toast.LENGTH_SHORT).show();
+                    } else {
+                        youTubePlayer.loadVideo(link);
+                    }
                 }
             }
         });
+    }
+
+    private String haveNotVideoLink(String lang) {
+        return "ru".equals(lang) ? "Cсылка на видео пустая" : "Бейне сілтемесі бос";
+    }
+
+    private String getLang() {
+        Resources res = this.getApplicationContext().getResources();
+        Configuration conf = res.getConfiguration();
+        return conf.locale.getLanguage();
     }
 }

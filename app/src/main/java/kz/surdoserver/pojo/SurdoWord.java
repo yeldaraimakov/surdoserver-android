@@ -13,14 +13,18 @@ public class SurdoWord {
     @SerializedName("name_kz")
     private String nameKZ;
 
-    @SerializedName("video_link")
-    private String videoLink;
+    @SerializedName("video_link_ru")
+    private String videoLinkRU;
 
-    public SurdoWord(int id, String nameRU, String nameKZ, String videoLink) {
+    @SerializedName("video_link_kz")
+    private String videoLinkKZ;
+
+    public SurdoWord(int id, String nameRU, String nameKZ, String videoLinkRU, String videoLinkKZ) {
         this.id = id;
         this.nameRU = nameRU;
         this.nameKZ = nameKZ;
-        this.videoLink = videoLink;
+        this.videoLinkRU = videoLinkRU;
+        this.videoLinkKZ = videoLinkKZ;
     }
 
     public int getId() {
@@ -35,7 +39,11 @@ public class SurdoWord {
         return nameKZ;
     }
 
-    public String getVideoLink() {
-        return videoLink;
+    public String getVideoLinkRU() {
+        return videoLinkRU;
+    }
+
+    public String getVideoLinkKZ() {
+        return videoLinkKZ;
     }
 }
